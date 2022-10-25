@@ -1,0 +1,620 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+  }
+  .a {
+    font-family: "Inter", sans-serif !important;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: #2b2b39;
+  }
+  body {
+    font-family: "Inter", sans-serif;
+    font-family: "Poppins", sans-serif;
+  }
+  nav {
+    width: 100%;
+    min-height: 68px;
+    border-bottom: 1px solid #217bf4;
+  }
+  .navbar {
+    font-family: "Inter", sans-serif !important;
+  }
+  .logo {
+    width: auto;
+    margin: 0 72px 0 0;
+  }
+  ul {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  a {
+    text-decoration: none !important;
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    list-style: none;
+  }
+  
+  header {
+    background: linear-gradient(311.76deg, #d4e7fe -14.49%, #ffffff 79.61%);
+    min-height: 100vh;
+  }
+  .outline-none {
+    outline: none;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    background-color: transparent;
+    border-bottom: 1px solid #555 !important;
+    padding: 12px 0;
+  }
+  .position-absolute {
+    position: absolute !important;
+    top: 10px;
+  }
+  .login-btn {
+    background: #217bf4;
+    box-shadow: 0px 7px 22px -6px rgba(33, 123, 244, 0.34);
+    border-radius: 14px;
+    padding: 18px 44px;
+    border: 1px solid #217bf4;
+    color: white;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height, or 117% */
+  
+    text-align: center;
+  
+    color: #ffffff;
+  }
+  .banner-text {
+    background: #e5f0fd;
+  
+    border-radius: 8px;
+    padding: 12px 30px;
+    display: flex;
+    align-items: center;
+    margin: 0 0 20px 0;
+    width: fit-content;
+  }
+  .hero-commuinity-text {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    color: #217bf4;
+    margin-bottom: 0;
+  }
+  section {
+    padding: 100px 0;
+  }
+  .banner-title-text {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 66px;
+    color: #0a093d;
+    margin-bottom: 1rem;
+  }
+  .banner-para-text {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #656464;
+  }
+  .all-btn {
+    background: #217bf4;
+    box-shadow: 0px 7px 22px -6px rgba(33, 123, 244, 0.34);
+    border-radius: 14px;
+    padding: 24px 42px;
+    border: 1px solid #217bf4;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    color: #ffffff;
+    transition: 0.4s all;
+  }
+  .frd-btn {
+    background: transparent !important;
+    color: #217bf4;
+  }
+  .frd-btn:hover {
+    background: #217bf4 !important;
+    color: #ffffff;
+  }
+  .list-grp {
+    margin: 20px 0 0 0;
+    padding: 0 0 0 14px;
+    position: relative;
+  }
+  .list-grp::before {
+    content: url(./images/list.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: fit-content;
+    height: 100%;
+  }
+  .list {
+    margin: 36px 0 0 0;
+  }
+  .list-grp a {
+    color: #171648;
+    line-height: 38px;
+    padding-left: 38px;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .about-text {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    color: #217bf4;
+  }
+  .about-title {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    color: #0a093d;
+  }
+  .about-para {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #656464;
+  }
+  .play_video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+  }
+  .onhover:hover .play_video {
+    opacity: 1;
+    background-color: rgba(134, 133, 133, 0.9);
+    border-radius: 12px;
+  }
+  .center-btn {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    height: 40px;
+  
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #2222;
+  }
+  .rating-text {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: #0a093d;
+  }
+  .netbook-people-img {
+    margin: 0 16px 0 0;
+  }
+  .netbook-people-img img {
+    max-width: 24px;
+    border-radius: 50%;
+  }
+  .achive-text {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0 !important;
+  
+    letter-spacing: -0.02em;
+  
+    color: #217bf4;
+  }
+  .card-para {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    /* or 162% */
+  
+    margin: 20px 0 0 0;
+    color: #8c8c8c;
+  }
+  .card-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #217bf4;
+    margin-top: 20px !important;
+    display: inline-block;
+  }
+  .card:hover {
+    background: #ffffff;
+    box-shadow: 0px 26px 49px rgba(146, 165, 184, 0.14);
+    border-radius: 6px;
+    border: 1px solid #ffffff;
+    box-sizing: border-box !important;
+  }
+  .achivement h4 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    color: #217bf4;
+  }
+  .achivement h2 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    color: #0a093d;
+  }
+  .achivement p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #656464;
+  }
+  
+  .achivement button {
+    padding: 22px 38px;
+  }
+  .title-text h4 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: #217bf4;
+  }
+  .title-text h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    color: #0a093d;
+  }
+  .title-text p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #656464;
+  }
+  .feature-card {
+    background: #ffffff;
+    box-shadow: 14px 22px 52px -12px rgba(127, 127, 127, 0.13);
+    border-radius: 14px;
+    margin-bottom: 44px;
+    padding: 44px 40px;
+    height: 30%;
+    display: flex;
+  }
+  .user-bg {
+    background: linear-gradient(154.49deg, #5ca1fe 6.61%, #217bf4 89.72%);
+    box-shadow: 0px 10px 22px -2px rgba(109, 171, 255, 0.36);
+    border-radius: 24px;
+    width: 66px;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 66px;
+    margin: 0 36px 0 0;
+  }
+  .feature-text h4 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 26px;
+    color: #2f2c4a;
+  }
+  .feature-text p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #656464;
+  }
+  .message {
+    background: linear-gradient(154.49deg, #ffd085 6.61%, #ffaf2e 89.72%);
+  }
+  .note {
+    background: linear-gradient(154.49deg, #ff858a 6.61%, #f04148 89.72%);
+  }
+  .team-tab-list {
+    background-color: #f2f7fe;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    padding: 28px 8px;
+    margin: 0 0 40px 0;
+    border-radius: 14px;
+  }
+  .team-link {
+    margin-right: 8px;
+  }
+  .team-link a {
+    padding: 20px 50px;
+  }
+  .team {
+    border-radius: 14px;
+    position: relative;
+    margin-bottom: 40px;
+  }
+  .team-card {
+    padding: 30px 52px;
+    margin: 0 auto 42px auto;
+    position: relative;
+  }
+  .team-card::before {
+    content: url(./images/shape.svg);
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    width: fit-content;
+    height: 100%;
+    transform: translateX(-50%);
+  }
+  .team-card::after {
+    content: url(./images/Check.svg);
+    position: absolute;
+    bottom: 55px;
+    left: 50%;
+    width: fit-content;
+    transform: translateX(-38%);
+  }
+  .team-card img {
+    max-width: 142px;
+    background: #dde9fd;
+    margin: 0 auto 42px auto;
+    border-radius: 50%;
+  }
+  .team-card-body h4 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 26px;
+    text-align: center;
+    color: #2f2c4a;
+  }
+  .team-card-body p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #656464;
+    margin-bottom: 1rem;
+  }
+  #feature {
+    background: linear-gradient(
+      0deg,
+      rgba(241, 246, 253, 0) 1.63%,
+      #f1f6fd 20.5%,
+      #f1f6fd 58.57%,
+      #ffffff 100%
+    );
+  }
+  #cta {
+    background: #e5f0fd;
+    padding: 40px 0;
+  }
+  .cta-app img {
+    max-width: 144px;
+    cursor: pointer;
+  }
+  .cta h4 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    color: #217bf4;
+  }
+  .cta h1 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 52px;
+    color: #0a093d;
+  }
+  .cta p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #656464;
+  }
+  .blog-card-title h3 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    color: #2f2c4a;
+    margin-left: 14px;
+  }
+  .blog-p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #656464;
+  }
+  .blog-card img {
+    margin-bottom: 25px;
+  }
+  #footer {
+    background: #2b2b39;
+  }
+  .col h4 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    /* identical to box height, or 100% */
+  
+    color: #ffffff;
+  }
+  .col ul li a {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 46px;
+    letter-spacing: 0.0125em;
+    color: #e7e7e7;
+  }
+  .subscribe-text {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    /* or 160% */
+  
+    color: #ffffff;
+  }
+  .subscribe {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #e7e7e7;
+  }
+  .subscribe input {
+    border: 1px solid rgba(255, 255, 255, 0.85);
+    border-radius: 12px;
+    background: transparent;
+    padding: 18px 148px 18px 18px;
+    width: 100%;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 12px;
+    letter-spacing: 0.0125em;
+    color: #717179;
+    outline: none !important;
+  }
+  .subscribe button {
+    position: absolute;
+    right: 2px;
+    width: 126px;
+    height: 52px;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 10px;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #2b2b39;
+    top: 2px;
+    outline: none !important;
+    transition: 0.2s all ease;
+  }
+  form {
+    position: relative;
+  }
+  .footer-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-logo {
+    max-width: 143px;
+    margin: 0 auto;
+  }
+  footer {
+    background: #20202d;
+    color: #fff;
+    padding: 20px 0 0 0;
+  }
+  footer li a {
+    background: #fff;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+  }
+  footer p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #f6f6f6;
+  }
+  
+  @media (max-width:568px){
+    .team-link a {
+        padding: 14px 30px;
+    }
+    .banner-title-text {
+        font-size: 40px;
+    }
+    .feature-text {
+        text-align: center;
+      }
+      .user-bg{margin: 0;}
+  }
